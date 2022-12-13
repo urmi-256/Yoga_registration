@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Yoga Classes Registration portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This is a small portal to register for monthly yoga classes under various batches.
 
 ### Deployment
+One can view the deployed site on netlify. Click here [link](https://statuesque-cendol-a602d5.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### what are the features?
+It include a registration page for user to register and login along with a dashboard to view user details and join monthly yoga classes.
 
-### `npm run build` fails to minify
+### How does it work?
+* User can register on the portal using their name, email, password.
+* User can login using email and password with secured JWT Token.
+* Once registered user will be redirected to dashboard where newly joined can join any batch.
+* ALready registered once can join a batch monthly on any date of the month with a fees of 500/- Rs INR.
+* User should be between 18-65 to join any batch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### What Algorithm used?
+* Single user using any email id i.e. only unique user id and user.
+* User between age 18-65 are only allowed to fill the form to join any batch.
+* New User can join any batch any time of month.
+* Already joined are checked by comparing thier date of joining with current month.
+* If not joined in the currently going month are made to join.
+
+### Database Tables
+* user_data (data for registration)
+- userid,email,password,name as attributes with unique email and id as primary key
+* detail (table to store user data)
+- userid, email,date,name,batch,age with userid as primary key
+- email is unique.
+
+### Er diagram 
+[ER diagram](https://drive.google.com/file/d/1yfgZx1iN8w1YgwCCCxIqfAtEtNybFSTx/view?usp=sharing)
+
+### various pages
+[Register](https://drive.google.com/file/d/17R7wFZit2PfkxmBzzjs6KMK2IFlLn-qT/view?usp=sharing)
+[dashboard](https://drive.google.com/file/d/1HwBUZGIMBV6nkeHS8ouBbyRmnFDGbA28/view?usp=sharing)
+[form](https://drive.google.com/file/d/1w3NIzwPBCbJdb1X3iTSyDV-3A6HaxH8X/view?usp=sharing)

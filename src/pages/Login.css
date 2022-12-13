@@ -1,0 +1,22 @@
+.login_cont {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+.login_cont_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 1rem;
+  padding: 1rem;
+}
+.form_cont_name {
+  font-size: large;
+  display: block;
+  margin: 1rem auto;
+}
+#login_btn {
+  margin: auto 4rem;
+}
